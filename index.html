@@ -13,141 +13,45 @@
     background: #f0f8ff;
     text-align: center;
   }
-  h1 {
-    color: #337ab7;
-    margin-bottom: 18px;
-  }
-  #speedometer-container {
-    position: relative;
-    max-width: 480px;
-    width: 100%;
-    height: 140px;
-    margin: 0 auto 35px;
-  }
+  h1 { color: #337ab7; margin-bottom: 18px; }
+  #speedometer-container { position: relative; max-width: 480px; width: 100%; height: 140px; margin: 0 auto 35px; }
   svg { width: 100%; height: 100%; }
-  path.background-arc {
-    fill: none;
-    stroke: url(#gradient);
-    stroke-width: 26;
-    stroke-linecap: round;
-  }
-  line#needle {
-    stroke: #222;
-    stroke-width: 5;
-    transform-origin: 22% 60%;
-    transition: transform 1s ease-in-out;
-  }
+  path.background-arc { fill: none; stroke: url(#gradient); stroke-width: 26; stroke-linecap: round; }
+  line#needle { stroke: #222; stroke-width: 5; transform-origin: 40px 80px; transition: transform 1s ease-in-out; }
   circle#needle-base { fill: #222; }
-  #relationship-status {
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    color: #333;
-  }
+  #relationship-status { position: absolute; width: 100%; bottom: 10px; text-align: center; font-size: 20px; font-weight: 600; color: #333; }
   #hurt-section { margin-bottom: 25px; }
   input[type="text"], input[type=number] {
-    padding: 9px 12px;
-    font-size: 16px;
-    width: 180px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    margin-right: 12px;
-    vertical-align: middle;
+    padding: 9px 12px; font-size: 16px; width: 180px; border-radius: 6px; border: 1px solid #ccc;
+    margin-right: 12px; vertical-align: middle;
   }
   button.add-hurt {
-    background-color: #d9534f;
-    border: none;
-    color: white;
-    padding: 10px 22px;
-    font-size: 16px;
-    border-radius: 7px;
-    cursor: pointer;
-    vertical-align: middle;
+    background-color: #d9534f; border: none; color: white; padding: 10px 22px;
+    font-size: 16px; border-radius: 7px; cursor: pointer; vertical-align: middle;
   }
-  .counter {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #d9534f;
-  }
+  .counter { font-size: 48px; margin-bottom: 20px; color: #d9534f; }
   #tasks-section {
-    background: white;
-    border-radius: 10px;
-    padding: 25px 30px;
-    box-shadow: 0 0 12px #ccc;
-    text-align: left;
-    max-width: 470px;
-    margin: 0 auto 30px;
+    background: white; border-radius: 10px; padding: 25px 30px; box-shadow: 0 0 12px #ccc;
+    text-align: left; max-width: 470px; margin: 0 auto 30px;
   }
   ul.task-list { list-style: disc inside; margin-top: 14px; padding-left: 10px; }
   ul.task-list li { margin: 9px 0; font-size: 17px; }
   ul.task-list li.done { text-decoration: line-through; opacity: 0.6; }
   ul.task-list li.auto-suggested { background: #e0f0ff; padding: 2px 6px; border-radius: 4px; }
   button.do-task {
-    margin-left: 20px;
-    background-color: #5cb85c;
-    border: none;
-    color: white;
-    padding: 5.5px 12px;
-    font-size: 14px;
-    border-radius: 7px;
-    cursor: pointer;
+    margin-left: 20px; background-color: #5cb85c; border: none; color: white;
+    padding: 5.5px 12px; font-size: 14px; border-radius: 7px; cursor: pointer;
   }
   #custom-task-input { margin-top: 20px; }
-  #custom-task-input input {
-    padding: 10px;
-    width: 280px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    vertical-align: middle;
-  }
+  #custom-task-input input { padding: 10px; width: 280px; font-size: 16px; border: 1px solid #ccc; border-radius: 7px; vertical-align: middle; }
   #custom-task-input button {
-    margin-left: 15px;
-    background-color: #337ab7;
-    border: none;
-    color: white;
-    padding: 10px 22px;
-    font-size: 16px;
-    border-radius: 7px;
-    cursor: pointer;
-    vertical-align: middle;
+    margin-left: 15px; background-color: #337ab7; border: none; color: white;
+    padding: 10px 22px; font-size: 16px; border-radius: 7px; cursor: pointer; vertical-align: middle;
   }
-  #message {
-    margin-top: 20px;
-    color: green;
-    font-weight: 700;
-    min-height: 26px;
-  }
-  #progress-container {
-    margin: 20px 0;
-    width: 100%;
-    background: #ddd;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  #progress-bar {
-    width: 0%;
-    height: 20px;
-    background: #5cb85c;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    line-height: 20px;
-    transition: width 0.5s ease;
-  }
-  #history-section {
-    max-height: 180px;
-    overflow-y: auto;
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px #ccc;
-    text-align: left;
-  }
+  #message { margin-top: 20px; color: green; font-weight: 700; min-height: 26px; }
+  #progress-container { margin: 20px 0; width: 100%; background: #ddd; border-radius: 12px; overflow: hidden; }
+  #progress-bar { width: 0%; height: 20px; background: #5cb85c; text-align: center; color: white; font-weight: bold; line-height: 20px; transition: width 0.5s ease; }
+  #history-section { max-height: 180px; overflow-y: auto; background: #fff; padding: 15px; border-radius: 8px; margin-top: 20px; box-shadow: 0 0 10px #ccc; text-align: left; }
   #history-section h3 { margin-top: 0; }
   #history-list li { font-size: 14px; margin-bottom: 6px; }
 </style>
@@ -174,7 +78,7 @@
 
 <div id="hurt-section" aria-label="Add hurt description and amount" role="form">
   <input type="text" id="hurtDescInput" placeholder="Describe what hurt was caused" aria-label="Description of hurt" />
-  <input id="hurtValue" type="number" min="1" max="5" value="1" aria-label="Hurt amount (1 to 5)" />
+  <input id="hurtValue" type="number" min="1" max="1000" value="1" aria-label="Hurt amount (1 to 1000)" />
   <button class="add-hurt" onclick="addHurt()">Add Hurt</button>
 </div>
 
@@ -202,55 +106,47 @@
 <div id="message" role="alert" aria-live="assertive"></div>
 
 <script>
-// Keyword-based task suggestions
 const suggestionMap = [
   { keywords: ["ignored","angry","sad","upset","hurt","disappointed"], tasks: ["Say something kind","Give a hug","Write a loving note"] },
   { keywords: ["forgot","didn’t help","late","chores","neglect"], tasks: ["Do a chore without asking","Cook a favorite meal","Run an errand"] },
   { keywords: ["argued","misunderstood","rude","harsh","yelled"], tasks: ["Apologize sincerely","Have a calm conversation","Listen actively"] }
 ];
 
-function getCounter() { return parseInt(localStorage.getItem('Chips_hurtCounter') || '0', 10); }
-function setCounter(val) { if(val<0) val=0; localStorage.setItem('Chips_hurtCounter', val); document.getElementById('counterChips').textContent=val; updateSpeedometer(val); updateProgress(); }
-function getTasks() { let t=localStorage.getItem('Chips_tasks'); return t ? JSON.parse(t) : []; }
-function setTasks(tasks) { localStorage.setItem('Chips_tasks', JSON.stringify(tasks)); }
-function getHistory() { let h=localStorage.getItem('Chips_history'); return h?JSON.parse(h):[]; }
-function setHistory(history){ localStorage.setItem('Chips_history', JSON.stringify(history)); }
+function getCounter(){ return parseInt(localStorage.getItem('Chips_hurtCounter')||'0',10); }
+function setCounter(val){ if(val<0) val=0; localStorage.setItem('Chips_hurtCounter',val); document.getElementById('counterChips').textContent=val; updateSpeedometer(val); updateProgress(); }
+function getTasks(){ let t=localStorage.getItem('Chips_tasks'); return t?t?JSON.parse(t):[]:[]; return t?JSON.parse(t):[]; }
+function setTasks(tasks){ localStorage.setItem('Chips_tasks',JSON.stringify(tasks)); }
+function getHistory(){ let h=localStorage.getItem('Chips_history'); return h?h?JSON.parse(h):[]:[]; return h?JSON.parse(h):[]; }
+function setHistory(history){ localStorage.setItem('Chips_history',JSON.stringify(history)); }
 
-function renderTasks() {
-  const tasks = getTasks();
-  const ul = document.getElementById('tasksChips');
-  ul.innerHTML='';
-  tasks.forEach((task, idx)=>{
-    const li=document.createElement('li');
-    li.textContent=task.desc;
-    if(task.done) li.className='done';
-    if(task.autoSuggested) li.classList.add('auto-suggested');
-    const btn=document.createElement('button');
-    btn.textContent='Done'; btn.className='do-task'; btn.disabled=task.done;
-    btn.onclick=()=>{
-      tasks[idx].done=true;
-      setTasks(tasks);
-      setCounter(getCounter()-1);
-      renderTasks();
-      showMessage('Great! Keep going.');
-    };
-    li.appendChild(btn); ul.appendChild(li);
+function renderTasks(){
+  const tasks=getTasks(); const ul=document.getElementById('tasksChips'); ul.innerHTML='';
+  tasks.forEach((task,idx)=>{
+    const li=document.createElement('li'); li.textContent=task.desc;
+    if(task.done) li.className='done'; if(task.autoSuggested) li.classList.add('auto-suggested');
+
+    const doneBtn=document.createElement('button'); doneBtn.textContent='Done'; doneBtn.className='do-task'; doneBtn.disabled=task.done;
+    doneBtn.onclick=()=>{ tasks[idx].done=true; setTasks(tasks); setCounter(getCounter()-1); renderTasks(); showMessage('Task completed!'); }; li.appendChild(doneBtn);
+
+    const removeBtn=document.createElement('button'); removeBtn.textContent='Remove'; removeBtn.className='do-task'; removeBtn.style.backgroundColor='#d9534f';
+    removeBtn.onclick=()=>{ if(!tasks[idx].done) setCounter(getCounter()-1); tasks.splice(idx,1); setTasks(tasks); renderTasks(); showMessage('Task removed.'); }; li.appendChild(removeBtn);
+
+    ul.appendChild(li);
   });
   updateProgress();
 }
 
-function addHurt() {
+function addHurt(){
   let desc=document.getElementById('hurtDescInput').value.trim();
   let val=parseInt(document.getElementById('hurtValue').value,10);
-  if(!desc){ showMessage('Please describe what hurt was caused.'); return; }
-  if(isNaN(val)||val<1||val>5){ showMessage('Hurt amount must be 1-5.'); return; }
+  if(!desc){ showMessage('Please describe the hurt.'); return; }
+  if(isNaN(val)||val<1){ showMessage('Hurt value must be at least 1'); return; }
 
-  let counter=getCounter()+val; setCounter(counter);
+  setCounter(getCounter()+val);
 
   let tasks=getTasks();
   for(let i=0;i<val;i++){ tasks.push({desc:desc,done:false,autoSuggested:false}); }
 
-  // Auto-suggest tasks based on keywords
   let addedSuggestions=[];
   suggestionMap.forEach(entry=>{
     entry.keywords.forEach(k=>{
@@ -294,14 +190,14 @@ function renderHistory(){
 function showMessage(msg){ const el=document.getElementById('message'); el.textContent=msg; setTimeout(()=>{el.textContent='';},3000); }
 
 function updateSpeedometer(counter){
-  const max=15; let clamped=Math.min(counter,max);
+  const max=1000; let clamped=Math.min(counter,max);
   const minAngle=20; const maxAngle=160; const angle=minAngle+(clamped/max)*(maxAngle-minAngle);
   const needle=document.getElementById('needle');
-  needle.style.transformOrigin='22% 60%'; needle.style.transform=`rotate(${angle}deg)`;
+  needle.style.transformOrigin='40px 80px'; needle.style.transform=`rotate(${angle}deg)`;
   const summary=document.getElementById('relationship-status');
   if(counter===0){ summary.textContent='Relationship Strength: Excellent'; summary.style.color='#5cb85c'; }
-  else if(counter<=5){ summary.textContent='Relationship Strength: Good'; summary.style.color='#f0ad4e'; }
-  else if(counter<=10){ summary.textContent='Relationship Strength: Fair'; summary.style.color='#f0ad4e'; }
+  else if(counter<=100){ summary.textContent='Relationship Strength: Good'; summary.style.color='#f0ad4e'; }
+  else if(counter<=500){ summary.textContent='Relationship Strength: Fair'; summary.style.color='#f0ad4e'; }
   else{ summary.textContent='Relationship Strength: Needs Attention'; summary.style.color='#d9534f'; }
 }
 
